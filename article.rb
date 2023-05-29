@@ -5,6 +5,7 @@
 #magazine: Return the magazine of the article
 =end
 
+=begin
 class Article
     attr_reader :author, :magazine, :title
   
@@ -22,4 +23,4 @@ class Article
     end
 end
 
-  
+=end

@@ -9,8 +9,7 @@ self.find_by_name(name): Given a string of a magzine's name, return the first ma
 contributing_authors: Return an array of auhors who have written more than 2 articles for the magazine
 =end
 
-
-class Magazine
+=begin class Magazine
     attr_accessor :name, :category
   
     @@all = []
@@ -41,4 +40,7 @@ class Magazine
       contributors.group_by(&:name).select { |_, authors| authors.length > 2 }.values.flatten
     end
 end
+=end
+
+
   

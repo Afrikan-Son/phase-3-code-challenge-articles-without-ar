@@ -8,6 +8,7 @@
 =end
 
 
+=begin 
 class Author
     attr_reader :name
   
@@ -31,4 +32,5 @@ class Author
       magazines.map(&:category).uniq
     end
 end
-  
+
+=end
