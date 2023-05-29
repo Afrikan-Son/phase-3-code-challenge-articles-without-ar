@@ -1,5 +1,5 @@
-#Object Relations without AR : Article Code challenge
-##Introduction
+# Object Relations without AR : Article Code challenge
+## Introduction
 For this assignment, you will be working with a Magazine domain.
 
  
@@ -18,7 +18,7 @@ Author - Magazine is a many to many relationship.
 
 Note: You should draw your domain on paper or on a whiteboard before you start coding. Remember to identify a single source of truth for your data.
 
-##Topics
+## Topics
 Classes and Instances
 Class and Instance Methods
 Variable Scope
@@ -26,7 +26,7 @@ Object Relationships
 Arrays and Array Methods
 
 
-##Project Setup
+## Project Setup
 Once you have the plan in place for the application you want to build take the following steps:
 
 Create a new project folder
@@ -35,7 +35,7 @@ Add your TM as a contributor to the project. (This is only for grading purposes.
 Please make sure you regularly commit to the repository.
 
 
-#Instructions
+# Instructions
 Build out all of the methods listed in the deliverables. The methods are listed in a suggested order, but you can feel free to tackle the ones you think are easiest. Be careful: some of the later methods rely on earlier ones.
 
 Remember! This code challenge does not have tests. You cannot run rspec and you cannot run learn. You'll need to create your own sample instances so that you can try out your code on your own. Make sure your associations and methods work in the console before submitting.
@@ -48,7 +48,7 @@ Before you submit! Save and run your code to verify that it works as you expect.
 
  
 
-##Deliverables
+## Deliverables
 Create the following classes and their respective methods.
 
 Setup your application so it runs from a configured run file. 
@@ -61,7 +61,7 @@ Feel free to build out any helper methods if needed.
 
  
 
-##Initializers, Readers, and Writers
+## Initializers, Readers, and Writers
 Author
 Author#initialize(name)
 An author is initialized with a name, as a string.
@@ -88,7 +88,7 @@ Article.all
 Returns an array of all Article instances
  
 
-##Object Relationship Methods
+## Object Relationship Methods
 Article
 Article#author
 Returns the author for that given article
@@ -104,14 +104,14 @@ Magazine#contributors
 Returns an array of Author instances who have written for this magazine
  
 
-##Associations and Aggregate Methods
-###Author
+## Associations and Aggregate Methods
+### Author
 Author#add_article(magazine, title)
 Given a magazine (as Magazine instance) and a title (as a string), creates a new Article instance and associates it with that author and that magazine.
 Author#topic_areas
 Returns a unique array of strings with the categories of the magazines the author has contributed to
 
-###Magazine
+### Magazine
 Magazine.find_by_name(name)
 Given a string of magazine's name, this method returns the first magazine object that matches
 Magazine#article_titles
