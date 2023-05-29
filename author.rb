@@ -52,7 +52,7 @@ class Author
 
 
 
-    
+
     def articles
         Article.all.select { |article| article.author == self }
       end
@@ -67,6 +67,6 @@ class Author
     
       def topic_areas
         magazines.map { |magazine| magazine.category }.uniq
-      end
+    end
    
 end
