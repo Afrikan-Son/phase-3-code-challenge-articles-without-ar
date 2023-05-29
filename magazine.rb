@@ -40,6 +40,8 @@ contributing_authors: Return an array of auhors who have written more than 2 art
       contributors.group_by(&:name).select { |_, authors| authors.length > 2 }.values.flatten
     end
 end
+
+check
 =end
 
 
